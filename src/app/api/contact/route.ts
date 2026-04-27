@@ -100,12 +100,12 @@ export async function POST(request: Request) {
               name: "Bilel Abbassi",
             },
           ],
-          subject: `New Contact Form Submission from ${name}`,
+          subject: `Nouveau message du portfolio de ${name}`,
           htmlContent: `
-            <h2>New Contact Form Submission</h2>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Message:</strong></p>
+            <h2>Nouveau message du formulaire de contact</h2>
+            <p><strong>Nom :</strong> ${name}</p>
+            <p><strong>Email :</strong> ${email}</p>
+            <p><strong>Message :</strong></p>
             <p>${message.replace(/\n/g, "<br>")}</p>
           `,
         }),

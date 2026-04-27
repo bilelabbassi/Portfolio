@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bilel Abbassi — DevOps Engineer",
-  description: "DevOps Engineer · Cloud & Automation · Portfolio",
+  title: "Bilel Abbassi — Ingénieur DevOps",
+  description: "Ingénieur DevOps · Cloud & Automatisation · Portfolio",
 };
 
 export default function RootLayout({
@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

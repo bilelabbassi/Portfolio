@@ -75,7 +75,7 @@ export default function Home() {
       <div id="loader" className={loaded ? "hide" : ""}>
         <div className="loader-initials">ENG BILEL</div>
         <div className="loader-bar-wrap"><div className="loader-bar"></div></div>
-        <div className="loader-text">Loading Portfolio</div>
+        <div className="loader-text">Chargement du Portfolio</div>
       </div>
 
       {/* PARTICLE CANVAS */}
@@ -88,11 +88,11 @@ export default function Home() {
           <span></span><span></span><span></span>
         </button>
         <ul className={`nav-links ${navOpen ? "open" : ""}`} id="nav-links">
-          <li><a href="#hero" onClick={() => setNavOpen(false)}>Home</a></li>
-          <li><a href="#skills" onClick={() => setNavOpen(false)}>Skills</a></li>
-          <li><a href="#experience" onClick={() => setNavOpen(false)}>Experience</a></li>
-          <li><a href="#projects" onClick={() => setNavOpen(false)}>Projects</a></li>
-          <li><a href="#education" onClick={() => setNavOpen(false)}>Education</a></li>
+          <li><a href="#hero" onClick={() => setNavOpen(false)}>Accueil</a></li>
+          <li><a href="#skills" onClick={() => setNavOpen(false)}>Compétences</a></li>
+          <li><a href="#experience" onClick={() => setNavOpen(false)}>Expérience</a></li>
+          <li><a href="#projects" onClick={() => setNavOpen(false)}>Projets</a></li>
+          <li><a href="#education" onClick={() => setNavOpen(false)}>Formation</a></li>
           <li><a href="#contact" onClick={() => setNavOpen(false)}>Contact</a></li>
         </ul>
       </nav>
@@ -101,12 +101,12 @@ export default function Home() {
       <section id="hero">
         <div className="hero-inner">
           <div className="hero-left reveal fade-up">
-            <div className="avail-tag"><span className="avail-dot"></span>Open to Opportunities</div>
+            <div className="avail-tag"><span className="avail-dot"></span>Ouvert aux Opportunités</div>
             <h1 className="hero-name">Bilel<br />Abbassi</h1>
-            <p className="hero-sub">DevOps Engineer · <span>Cloud &amp; Automation</span></p>
+            <p className="hero-sub">Ingénieur DevOps · <span>Cloud &amp; Automatisation</span></p>
             <div className="hero-ctas">
-              <a href="#experience" className="btn btn-primary">View Experience</a>
-              <a href="#contact" className="btn btn-outline">Get In Touch</a>
+              <a href="#experience" className="btn btn-primary">Voir l'Expérience</a>
+              <a href="#contact" className="btn btn-outline">Me Contacter</a>
             </div>
           </div>
           <div className="hero-card-wrap reveal slide-right">
@@ -115,10 +115,10 @@ export default function Home() {
               <div className="card-ring"></div>
               <div className="card-avatar">BA</div>
               <div className="card-name">Bilel Abbassi</div>
-              <div className="card-role">DevOps Engineer</div>
+              <div className="card-role">Ingénieur DevOps</div>
               <div className="card-stats">
-                <div className="stat"><div className="stat-num">1+</div><div className="stat-label">Yrs Exp</div></div>
-                <div className="stat"><div className="stat-num">5+</div><div className="stat-label">Projects</div></div>
+                <div className="stat"><div className="stat-num">1+</div><div className="stat-label">Ans Exp</div></div>
+                <div className="stat"><div className="stat-num">5+</div><div className="stat-label">Projets</div></div>
                 <div className="stat"><div className="stat-num">+5</div><div className="stat-label">Tech Cloud</div></div>
               </div>
             </div>
@@ -132,21 +132,21 @@ export default function Home() {
       {/* SKILLS */}
       <section id="skills">
         <div className="container">
-          <span className="section-label reveal fade-up">What I work with</span>
-          <h2 className="section-title reveal fade-up">Skills &amp;<br />Technologies</h2>
+          <span className="section-label reveal fade-up">Ce avec quoi je travaille</span>
+          <h2 className="section-title reveal fade-up">Compétences &amp;<br />Technologies</h2>
           <div className="skills-grid">
             <div className="skill-list reveal slide-left">
               <SkillBar name="AWS (Multi-service)" pct="90%" color="bar-amber" width="90" />
               <SkillBar name="Microsoft Azure" pct="60%" color="bar-indigo" width="75" />
-              <SkillBar name="Docker &amp; Containerization" pct="95%" color="bar-cyan" width="95" />
-              <SkillBar name="Kubernetes" pct="70%" color="bar-indigo" width="80" />
-              <SkillBar name="CI/CD Pipelines" pct="92%" color="bar-pink" width="92" />
-              <SkillBar name="Terraform / Ansible (IaC)" pct="65%" color="bar-amber" width="85" />
-              <SkillBar name="Prometheus &amp; Grafana" pct="88%" color="bar-cyan" width="88" />
-              <SkillBar name="Security (Trivy, Snyk, SonarQube)" pct="80%" color="bar-pink" width="80" />
+              <SkillBar name="Docker &amp; Conteneurisation" pct="95%" color="bar-cyan" width={95} />
+              <SkillBar name="Kubernetes" pct="70%" color="bar-indigo" width={80} />
+              <SkillBar name="Pipelines CI/CD" pct="92%" color="bar-pink" width={92} />
+              <SkillBar name="Terraform / Ansible (IaC)" pct="65%" color="bar-amber" width={85} />
+              <SkillBar name="Prometheus &amp; Grafana" pct="88%" color="bar-cyan" width={88} />
+              <SkillBar name="Sécurité (Trivy, Snyk, SonarQube)" pct="80%" color="bar-pink" width={80} />
             </div>
             <div className="reveal slide-right">
-              <div className="tech-cloud-title">Technology Cloud</div>
+              <div className="tech-cloud-title">Technologies</div>
               <div className="chip-cloud">
                 <TechChip icon="☁️" name="AWS" />
                 <TechChip icon="🔵" name="Azure" />
@@ -187,38 +187,38 @@ export default function Home() {
       {/* EXPERIENCE */}
       <section id="experience">
         <div className="container">
-          <span className="section-label reveal fade-up">Career journey</span>
-          <h2 className="section-title reveal fade-up">Work<br />Experience</h2>
+          <span className="section-label reveal fade-up">Parcours professionnel</span>
+          <h2 className="section-title reveal fade-up">Expérience<br />Professionnelle</h2>
           <div className="timeline">
             <TimelineItem 
-              date="Feb – Mar 2026 · Freelance · Remote"
-              title="DevOps Engineer — Kubernetes Automation"
-              company="Mission Freelance · OVH Infrastructure"
-              desc="Automated the full deployment of a Kubernetes cluster (control plane + 2 workers) on OVH servers using Ansible playbooks. Deployed applications with HPA auto-scaling and Canary Release progressive deployment strategy. Set up cluster monitoring with Prometheus and Grafana."
+              date="Fév – Mar 2026 · Freelance · Remote"
+              title="Ingénieur DevOps — Automatisation Kubernetes"
+              company="Mission Freelance · Infrastructure OVH"
+              desc="Automatisation du déploiement complet d'un cluster Kubernetes (plan de contrôle + 2 workers) sur les serveurs OVH via des playbooks Ansible. Déploiement d'applications avec auto-scaling HPA et stratégie de déploiement progressif Canary Release. Configuration de la surveillance du cluster avec Prometheus et Grafana."
               chips={["Kubernetes", "Ansible", "HPA", "Canary Release", "Prometheus", "Grafana", "OVH"]}
               chipColors={["", "pink", "cyan", "amber", "", "cyan", "pink"]}
             />
             <TimelineItem 
               date="Oct – Nov 2025 · Freelance · Remote"
-              title="DevOps Engineer — Monitoring &amp; Observability"
+              title="Ingénieur DevOps — Monitoring &amp; Observabilité"
               company="Mission Freelance · Remote"
-              desc="Designed and deployed a centralized observability platform (Prometheus + Grafana + Alertmanager) on a hub-and-spoke architecture supervising 4+ remote servers. Set up Prometheus scraping for CPU, memory, disk and Docker container metrics. Created interactive Grafana dashboards enabling anomaly detection in under 1 minute. Implemented an Alertmanager → Telegram bot alerting pipeline, reducing MTTD from hourly manual checks to automatic notifications in under 2 minutes."
-              chips={["Prometheus", "Grafana", "Alertmanager", "Telegram Bot", "Hub-and-Spoke"]}
+              desc="Conception et déploiement d'une plateforme d'observabilité centralisée (Prometheus + Grafana + Alertmanager) sur une architecture hub-and-spoke supervisant 4+ serveurs distants. Configuration du scraping Prometheus pour les métriques CPU, mémoire, disque et conteneurs Docker. Création de tableaux de bord Grafana interactifs permettant la détection d'anomalies en moins d'1 minute. Implémentation d'un pipeline d'alerte Alertmanager → bot Telegram, réduisant le MTTD de vérifications manuelles horaires à des notifications automatiques en moins de 2 minutes."
+              chips={["Prometheus", "Grafana", "Alertmanager", "Bot Telegram", "Hub-and-Spoke"]}
               chipColors={["", "cyan", "pink", "amber", ""]}
             />
             <TimelineItem 
               date="Mar – Jun 2025 · Next Consult"
-              title="DevOps Engineer — Dockerization &amp; CI/CD"
+              title="Ingénieur DevOps — Dockerisation &amp; CI/CD"
               company="Next Consult"
-              desc="Containerized and deployed 3 web applications (Next.js, Nuxt.js) with strictly separated staging and production environments on aaPanel and Plesk. Built end-to-end GitHub Actions CI/CD pipelines with automated builds, SonarQube quality gates, Docker image vulnerability scanning (Trivy), and automatic deployment on every commit. Managed Docker containers for MongoDB and PostgreSQL. Deployed full observability stack (Prometheus + Grafana)."
+              desc="Conteneurisation et déploiement de 3 applications web (Next.js, Nuxt.js) avec des environnements staging et production strictement séparés sur aaPanel et Plesk. Construction de pipelines CI/CD GitHub Actions bout en bout avec builds automatisés, portes de qualité SonarQube, scan de vulnérabilité d'images Docker (Trivy), et déploiement automatique à chaque commit. Gestion des conteneurs Docker pour MongoDB et PostgreSQL. Déploiement de la pile d'observabilité complète (Prometheus + Grafana)."
               chips={["Docker", "GitHub Actions", "SonarQube", "Trivy", "Next.js", "Nuxt.js", "MongoDB", "PostgreSQL"]}
               chipColors={["", "cyan", "pink", "amber", "", "cyan", "pink", ""]}
             />
             <TimelineItem 
-              date="Feb – Aug 2024 · ESPRIT Graduation Project"
-              title="Cloud AWS Architecture — Final Year Project"
+              date="Fév – Aoû 2024 · Projet de Fin d'Études"
+              title="Architecture Cloud AWS — Projet de Fin d'Année"
               company="Perpetual Code · ESPRIT 2024"
-              desc="Deployed a multi-service AWS cloud architecture: Elastic Beanstalk (auto-scaling), ELB (load balancing between EC2 instances), CloudFront (low-latency content delivery). Set up Bitbucket Pipelines CI/CD automating build, test and deployment to EC2. Configured CloudWatch with alarms and supervision dashboards. Administered Amazon RDS with Multi-AZ high availability. Integrated SonarQube as mandatory quality gate blocking non-compliant deployments."
+              desc="Déploiement d'une architecture cloud AWS multi-services : Elastic Beanstalk (auto-scaling), ELB (équilibrage de charge entre instances EC2), CloudFront (distribution de contenu à faible latence). Configuration de pipelines CI/CD Bitbucket automatisant build, test et déploiement sur EC2. Configuration de CloudWatch avec alarmes et tableaux de bord de supervision. Administration d'Amazon RDS avec haute disponibilité Multi-AZ. Intégration de SonarQube comme porte de qualité obligatoire bloquant les déploiements non conformes."
               chips={["AWS", "Elastic Beanstalk", "ELB", "CloudFront", "CloudWatch", "RDS Multi-AZ", "Bitbucket Pipelines", "SonarQube"]}
               chipColors={["amber", "", "cyan", "pink", "", "amber", "cyan", ""]}
             />
@@ -229,49 +229,49 @@ export default function Home() {
       {/* PROJECTS */}
       <section id="projects">
         <div className="container">
-          <span className="section-label reveal fade-up">What I've built</span>
-          <h2 className="section-title reveal fade-up">Projects</h2>
+          <span className="section-label reveal fade-up">Ce que j'ai construit</span>
+          <h2 className="section-title reveal fade-up">Projets</h2>
           <div className="proj-grid">
             <ProjectCard 
               emoji="⎈"
-              title="Kubernetes Cluster Automation"
-              desc="Ansible playbook automating full K8s cluster setup (control plane + 2 workers) on OVH, with HPA auto-scaling, Canary Release deployments, and Prometheus/Grafana monitoring."
+              title="Automatisation Cluster Kubernetes"
+              desc="Playbook Ansible automatisant la configuration complète d'un cluster K8s (plan de contrôle + 2 workers) sur OVH, avec auto-scaling HPA, déploiements Canary Release, et surveillance Prometheus/Grafana."
               tags={["Kubernetes", "Ansible", "HPA", "Prometheus", "OVH"]}
             />
             <ProjectCard 
               emoji="📡"
-              title="Centralized Observability Platform"
-              desc="Hub-and-spoke monitoring architecture supervising 4+ servers in real time. Grafana dashboards with <1 min anomaly detection, Alertmanager → Telegram bot with 2-minute MTTD."
-              tags={["Prometheus", "Grafana", "Alertmanager", "Telegram API"]}
+              title="Plateforme d'Observabilité Centralisée"
+              desc="Architecture de monitoring hub-and-spoke supervisant 4+ serveurs en temps réel. Tableaux de bord Grafana avec détection d'anomalies <1 min, Alertmanager → bot Telegram avec MTTD de 2 minutes."
+              tags={["Prometheus", "Grafana", "Alertmanager", "API Telegram"]}
             />
             <ProjectCard 
               emoji="🚀"
-              title="Full CI/CD Pipeline — Next/Nuxt.js"
-              desc="End-to-end GitHub Actions pipelines for 3 web apps with zero-hotfix-in-production policy, SonarQube quality gates, Trivy security scanning, and zero-downtime deployments."
+              title="Pipeline CI/CD Complet — Next/Nuxt.js"
+              desc="Pipelines GitHub Actions bout en bout pour 3 applications web avec politique zero-hotfix-in-production, portes de qualité SonarQube, scan de sécurité Trivy, et déploiements zero-downtime."
               tags={["GitHub Actions", "Docker", "SonarQube", "Trivy", "Next.js"]}
             />
             <ProjectCard 
               emoji="☁️"
-              title="AWS Multi-Service Cloud Architecture"
-              desc="Production-grade AWS setup with Elastic Beanstalk auto-scaling, ELB, CloudFront CDN, RDS Multi-AZ and CloudWatch supervision. Full CI/CD via Bitbucket Pipelines."
+              title="Architecture Cloud AWS Multi-Services"
+              desc="Configuration AWS de production avec Elastic Beanstalk auto-scaling, ELB, CDN CloudFront, RDS Multi-AZ et supervision CloudWatch. CI/CD complet via Bitbucket Pipelines."
               tags={["AWS", "Elastic Beanstalk", "CloudFront", "RDS", "CloudWatch"]}
             />
             <ProjectCard 
               emoji="🐳"
-              title="Nuxt.js Dockerization &amp; CloudPanel"
-              desc="Containerized a Nuxt.js application with full production environment configuration on CloudPanel. CI/CD pipeline for continuous delivery with version management and zero-downtime releases."
+              title="Dockerisation Nuxt.js &amp; CloudPanel"
+              desc="Conteneurisation d'une application Nuxt.js avec configuration complète de l'environnement de production sur CloudPanel. Pipeline CI/CD pour la livraison continue avec gestion de versions et déploiements zero-downtime."
               tags={["Docker", "Nuxt.js", "CloudPanel", "CI/CD"]}
             />
             <ProjectCard 
               emoji="🏗️"
-              title="Three-Tier App DevOps Pipeline"
-              desc="Dockerized React / Node.js / MongoDB app with complete Jenkins CI/CD. Azure VMs provisioned via Terraform, server configuration automated with Ansible."
+              title="Pipeline DevOps Application Three-Tier"
+              desc="Application Dockerisée React / Node.js / MongoDB avec CI/CD Jenkins complet. Machines virtuelles Azure provisionnées via Terraform, configuration serveur automatisée avec Ansible."
               tags={["Jenkins", "Docker", "Terraform", "Ansible", "Azure"]}
             />
             <ProjectCard 
               emoji="🔐"
-              title="Spring/Angular Academic DevOps"
-              desc="Full DevOps pipeline for a Spring Boot + Angular + MySQL app: automated Jenkins build → Docker push to Nexus → SonarQube code analysis → Prometheus metrics → Grafana dashboards."
+              title="DevOps Académique Spring/Angular"
+              desc="Pipeline DevOps complet pour une application Spring Boot + Angular + MySQL : build Jenkins automatisé → push Docker vers Nexus → analyse code SonarQube → métriques Prometheus → tableaux de bord Grafana."
               tags={["Jenkins", "Nexus", "SonarQube", "Prometheus", "Spring Boot"]}
             />
           </div>
@@ -281,31 +281,31 @@ export default function Home() {
       {/* EDUCATION & LANGUAGES */}
       <section id="education">
         <div className="container">
-          <span className="section-label reveal fade-up">Background</span>
-          <h2 className="section-title reveal fade-up">Education &amp;<br />Languages</h2>
+          <span className="section-label reveal fade-up">Parcours</span>
+          <h2 className="section-title reveal fade-up">Formation &amp;<br />Langues</h2>
           <div className="edu-lang-grid">
             <div className="reveal slide-left">
-              <div className="section-subtitle">Degrees</div>
+              <div className="section-subtitle">Diplômes</div>
               <div className="edu-cards">
                 <div className="edu-card">
-                  <div className="edu-degree">Diplôme d'Ingénieur — Software Engineering</div>
+                  <div className="edu-degree">Diplôme d'Ingénieur — Génie Logiciel</div>
                   <div className="edu-school">ESPRIT — École Supérieure Privée d'Ingénierie</div>
                   <div className="edu-years">2021 – 2024</div>
                 </div>
                 <div className="edu-card" style={{ borderLeftColor: "var(--cyan)" }}>
-                  <div className="edu-degree">Licence Appliquée — Computer Networks</div>
-                  <div className="edu-school">ISSAT gafsa</div>
+                  <div className="edu-degree">Licence Appliquée — Réseaux Informatiques</div>
+                  <div className="edu-school">ISSAT Gafsa</div>
                   <div className="edu-years">2018 – 2021</div>
                 </div>
               </div>
-              <div className="section-subtitle">Certifications &amp; Training</div>
+              <div className="section-subtitle">Certifications &amp; Formations</div>
               <div className="formation-card">
-                <div className="formation-title">Kubernetes Administrator (CKA) — In Progress</div>
-                <div className="formation-detail">Active preparation for the official CKA exam. Topics: cluster administration, networking, scheduling, HPA autoscaling, rolling updates, blue/green deployments, persistent storage, and RBAC security.</div>
+                <div className="formation-title">Administrateur Kubernetes (CKA) — En Cours</div>
+                <div className="formation-detail">Préparation active pour l'examen officiel CKA. Sujets : administration de cluster, networking, scheduling, auto-scaling HPA, mises à jour progressives, déploiements blue/green, stockage persistant et sécurité RBAC.</div>
               </div>
             </div>
             <div className="reveal slide-right">
-              <div className="section-subtitle">Languages</div>
+              <div className="section-subtitle">Langues</div>
               <div className="lang-cards">
                 <div className="lang-card">
                   <span className="lang-name">🇹🇳 Arabic</span>
@@ -329,7 +329,7 @@ export default function Home() {
       <ContactSection />
 
       <footer>
-        <p>Crafted with passion · Bilel Abbassi · 2026</p>
+        <p>Créé avec passion · Bilel Abbassi · 2026</p>
       </footer>
     </>
   );
@@ -544,44 +544,44 @@ function ContactSection() {
   return (
     <section id="contact">
       <div className="container">
-        <span className="section-label reveal fade-up">Let's connect</span>
-        <h2 className="section-title reveal fade-up">Get In<br />Touch</h2>
+          <span className="section-label reveal fade-up">Restons en contact</span>
+          <h2 className="section-title reveal fade-up">Me<br />Contacter</h2>
         <div className="contact-grid">
           <div className="contact-cards reveal slide-left">
             <ContactCard icon="📧" label="Email" value="bilel.ab@esprit.tn" />
             <ContactCard icon="📱" label="Phone" value="+216 50 826 004" />
-            <ContactCard icon="📍" label="Location" value="Ariana El Ghazela, Tunisia" />
+            <ContactCard icon="📍" label="Localisation" value="Ariana El Ghazela, Tunisie" />
             <ContactCard icon="💼" label="LinkedIn" value="linkedin.com/in/bilel-abbassi" />
             <ContactCard icon="🐙" label="GitHub" value="github.com/bilelabbassi" />
-            <ContactCard icon="✅" label="Availability" value="Open to new opportunities" />
+            <ContactCard icon="✅" label="Disponibilité" value="Ouvert aux nouvelles opportunités" />
             
             {/* Brevo Contact Form */}
             <form className="contact-form" onSubmit={handleSubmit}>
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="Votre Nom"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
               />
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="Votre Email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
               />
               <textarea
-                placeholder="Your Message"
+                placeholder="Votre Message"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
               />
               <button type="submit" className="btn btn-primary" disabled={status === "loading"}>
-                {status === "loading" ? "Sending..." : "Send Message"}
+                {status === "loading" ? "Envoi en cours..." : "Envoyer le Message"}
               </button>
-              {status === "success" && <p className="form-success">Message sent successfully!</p>}
-              {status === "error" && <p className="form-error">Failed to send message. Please try again.</p>}
+              {status === "success" && <p className="form-success">Message envoyé avec succès !</p>}
+              {status === "error" && <p className="form-error">Échec de l'envoi. Veuillez réessayer.</p>}}
             </form>
           </div>
           <div className="reveal slide-right" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
